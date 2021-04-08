@@ -28,8 +28,8 @@ const GCReport defaultGcReport = {
 /* Must be called before calling any of the other functions */
 void initComms(uint8_t dataPin, uint32_t microsecondCycles);
 
-/* Blocking wait on a poll request - handles responding to probe/origin requests */
-void awaitPoll();
+/* Blocking wait on a poll request, returns rumble value - handles responding to probe/origin requests */
+bool awaitPoll();
 
 /* Sends arbitrary number of bytes to console */
 void respond(uint8_t* responsePointer, uint32_t responseBitLength);
