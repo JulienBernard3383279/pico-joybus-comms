@@ -6,3 +6,5 @@ You should integrate the files manually in your project. The CMakeList.txt is an
 Check src/joybus.cpp for more information.
 
 This was extracted from https://github.com/JulienBernard3383279/pico-rectangle for public use and is licensed under GPL.
+
+Contact me if you want to use it in a non-GPL project. Discord: Arte#9281, Twitter: https://twitter.com/SSBM_Arte
