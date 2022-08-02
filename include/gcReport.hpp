@@ -1,5 +1,5 @@
-#ifndef JOYBUS_COMMS_HPP
-#define JOYBUS_COMMS_HPP
+#ifndef __GCREPORT_HPP
+#define __GCREPORT_HPP
 
 #include "pico/stdlib.h"
 
@@ -24,17 +24,5 @@ const GCReport defaultGcReport = {
     .analogL=0,
     .analogR=0
 };
-
-/* Must be called before calling any of the other functions */
-void initComms(uint8_t dataPin, uint32_t microsecondCycles);
-
-/* Blocking wait on a poll request, returns rumble value - handles responding to probe/origin requests */
-bool awaitPoll();
-
-/* Sends arbitrary number of bytes to console */
-void respond(uint8_t* responsePointer, uint32_t responseBitLength);
-
-/* Sends a Gamecube controller state to console (helper) */
-void respondToPoll(GCReport *gcReport);
 
 #endif
