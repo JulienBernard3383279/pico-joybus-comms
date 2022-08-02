@@ -1,6 +1,8 @@
 # pico-joybus-comms
-This is an implementation of the GameCube controller commmunication protocol for the Raspberry Pi Pico using the SysTick.
+This is an implementation of the GameCube controller commmunication protocol for the Raspberry Pi Pico using the PIO.
 
-This is meant to be used as a submodule in Raspberry Pi Pico projects seeking to spoof a GameCube controller.
+You should integrate the files manually in your project. The CMakeList.txt is an excerpt corresponding to what you'll need to add to yours.
+
+Check src/joybus.cpp for more information.
 
 This was extracted from https://github.com/JulienBernard3383279/pico-rectangle for public use.
