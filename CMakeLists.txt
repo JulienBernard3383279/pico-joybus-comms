@@ -7,4 +7,4 @@ add_custom_command(OUTPUT ${CMAKE_CURRENT_LIST_DIR}/generated/joybus.pio.h
         COMMAND Pioasm ${CMAKE_CURRENT_LIST_DIR}/joybus.pio ${CMAKE_CURRENT_LIST_DIR}/generated/joybus.pio.h
         )
 
-target_link_libraries(project pico_stdlib hardware_pio)
+target_link_libraries(project pico_stdlib pico_platform hardware_pio)
